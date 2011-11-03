@@ -1,3 +1,9 @@
+# revision 20276
+# category Package
+# catalog-ctan /macros/latex/contrib/ijmart
+# catalog-date 2010-10-30 13:33:19 +0200
+# catalog-license lppl
+# catalog-version 1.6
 Name:		texlive-ijmart
 Version:	1.6
 Release:	1
@@ -55,6 +61,7 @@ preprints in arXiv with minimal changes in the LaTeX source.
 #- source
 %doc %{_texmfdistdir}/source/latex/ijmart/ijmart.dtx
 %doc %{_texmfdistdir}/source/latex/ijmart/ijmart.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +72,5 @@ preprints in arXiv with minimal changes in the LaTeX source.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

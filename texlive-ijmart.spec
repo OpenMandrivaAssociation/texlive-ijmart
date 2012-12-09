@@ -61,3 +61,17 @@ preprints in arXiv with minimal changes in the LaTeX source.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
++ Revision: 752728
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
++ Revision: 718706
+- texlive-ijmart
+- texlive-ijmart
+- texlive-ijmart
+- texlive-ijmart
+

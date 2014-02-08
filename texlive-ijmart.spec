@@ -6,7 +6,7 @@
 # catalog-version 1.6
 Name:		texlive-ijmart
 Version:	1.6
-Release:	2
+Release:	3
 Summary:	LaTeX Class for the Israel Journal of Mathematics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ijmart

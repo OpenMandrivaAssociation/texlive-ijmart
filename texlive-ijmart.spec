@@ -1,19 +1,13 @@
-# revision 30958
-# category Package
-# catalog-ctan /macros/latex/contrib/ijmart
-# catalog-date 2013-06-26 19:53:21 +0200
-# catalog-license lppl
-# catalog-version 1.7
 Name:		texlive-ijmart
-Version:	1.7
-Release:	10
+Version:	30958
+Release:	1
 Summary:	LaTeX Class for the Israel Journal of Mathematics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ijmart
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ manuscripts for The Israel Journal of Mathematics or to put the
 preprints in arXiv with minimal changes in the LaTeX source.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,7 +48,8 @@ preprints in arXiv with minimal changes in the LaTeX source.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 

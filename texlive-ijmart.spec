@@ -1,6 +1,6 @@
 Name:		texlive-ijmart
 Version:	30958
-Release:	1
+Release:	2
 Summary:	LaTeX Class for the Israel Journal of Mathematics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ijmart

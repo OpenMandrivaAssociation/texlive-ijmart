@@ -3,7 +3,7 @@ Version:	30958
 Release:	2
 Summary:	LaTeX Class for the Israel Journal of Mathematics
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ijmart
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ijmart
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ijmart.doc.r%{version}.tar.xz
